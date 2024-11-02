@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.game-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.game-card {
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
+
+.game-card img {
+    width: 100px;
+    height: auto;
+}
+
+.diamond-item img {
+    width: 50px; /* Atur ulang ukuran gambar */
+    height: auto;
+    display: block; /* Pastikan gambar tampil sebagai blok agar lebih mudah diatur */
+    margin: 0 auto; /* Pusatkan gambar jika diperlukan */
+}
+
+.diamond-table {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px; /* Membuat ujung melengkung */
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efek transisi */
+}
+
+.diamond-table:hover {
+    background-color: #f0f8ff; /* Warna saat hover */
+}
+
+.diamond-table:active {
+    background-color: #add8e6; /* Warna saat diklik */
+}
+
+.diamond-table img {
+    width: 50px; /* Sesuaikan ukuran gambar */
+    height: auto;
+    margin-right: 10px;
+}
+
+.diamond-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Tambahkan gaya untuk perubahan warna tombol */
+button#pay-now-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button#pay-now-btn:hover {
+    background-color: #218838;
+}
+
+
+.hidden {
+    display: none;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}

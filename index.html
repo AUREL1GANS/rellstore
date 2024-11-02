@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rell Store</h1>
+    </header>
+
+    <main>
+        <section class="game-section">
+            <div class="game-card" onclick="navigateToGamePage('mlbb')">
+                <img src="logo_mlbb.jpeg" alt="Mobile Legends">
+                <p>Mobile Legends</p>
+            </div>
+        </section>
+
+   <section id="diamond-page" class="hidden">
+    <div class="diamond-table" onclick="showPaymentButton(59, 16000)">
+        <img src="diamond.png" alt="Diamond">
+        <div class="diamond-info">
+            <p>59 Diamonds</p>
+            <p>Harga: Rp 16.000</p>
+        </div>
+    </div>
+    <div class="diamond-table" onclick="showPaymentButton(74, 20000)">
+        <img src="diamond.png" alt="Diamond">
+        <div class="diamond-info">
+            <p>74 Diamonds</p>
+            <p>Harga: Rp 20.000</p>
+        </div>
+    </div>
+    <button id="pay-now-btn" class="hidden">Bayar Sekarang</button>
+</section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
