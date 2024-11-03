@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.game-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.game-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 150px; /* Atur ukuran lebar card sesuai kebutuhan */
+    height: auto; /* Sesuaikan tinggi otomatis */
+}
+
+.game-card img {
+    width: 100%; /* Atur agar gambar memenuhi card */
+    height: auto; /* Pastikan gambar tetap proporsional */
+    border-radius: 5px; /* Tambahkan radius jika ingin gambar melengkung */
+    object-fit: contain; /* Pastikan gambar tidak melar */
+}
+
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.diamond-table, .membership-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.diamond-table:hover {
+    background-color: #f0f8ff;
+}
+
+.diamond-table:active {
+    background-color: #add8e6;
+}
+
+.diamond-table img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.diamond-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.membership-item img {
+    width: 50px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin-right: 10px; /* Beri jarak antar gambar dan teks */
+}
+.membership-item {
+    display: flex;
+    align-items: center; /* Agar gambar dan teks sejajar */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+button#pay-now-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button#pay-now-btn:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
+
+.product-nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-nav button:hover {
+    background-color: #555;
+}
